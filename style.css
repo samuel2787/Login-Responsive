@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.azul {
+  background-color: #0560e0;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.azul h1 {
+  color: white;
+  font-size: 32px;
+}
+
+.formulario {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja {
+  width: 300px;
+}
+
+.caja h2 {
+  font-weight: normal;
+  color: #1a2250;
+}
+
+.texto {
+  font-size: 12px;
+  color: gray;
+  margin: 15px 0 40px 0;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #1a2250;
+  margin-bottom: 8px;
+}
+
+.input {
+  background-color: white;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.olvido {
+  text-align: right;
+  font-size: 12px;
+  color: #0560e0;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #0560e0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 35px;
+  font-size: 14px;
+}
+
+.registro {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .azul {
+    display: none;
+  }
+
+  .formulario {
+    align-items: flex-start;
+    padding: 60px 20px;
+  }
+
+  .caja {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .registro {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    margin-top: 25px;
+  }
+
+  .registro b {
+    color: #0560e0;
+  }
+}
